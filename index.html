@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>SerVant</title>
+	</head>
+	<body>
+		<script src="js/main.js"></script>
+		<!-- connect jquery&slider-->
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- 33 KB -->
+		<!-- fotorama.css & fotorama.js. -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+			rel="stylesheet"
+		/>
+		<!-- 3 KB -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		<!-- 16 KB -->
+		<!-- end connection-->
+
+		<div class="container">
+			<div class="header">
+				<div class="m-header-line">
+					<div class="m-phone">
+						<a href="tel:0362609571" class="social-link">
+							<svg class="m-link">
+								<use xlink:href="img/icons.svg#m-phone"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="logo">
+						<img class="logo-img" src="img/logo.png" alt="logo" />
+									</div>
+
+					<div class="m-menu" id="open-menu" onclick="menuOpen()">
+						<svg class="m-link">
+							<use xlink:href="img/icons.svg#m-menu"></use>
+						</svg>
+					</div>
+				</div>
+
+				<div class="menu" id="menu">
+					<div class="link" onclick="menuHide()">
+						<a href="#main">Головна</a>
+					</div>
+					<div class="dropdown">
+						<a href="#about" onclick="menuHide()">Меблі</a>
+						<!-- <button class="dropbtn">ФАКТИ</button> -->
+						<div class="dropdown-content">
+							<a class="dropdown-link" href="#">Кухні</a>
+							<a class="dropdown-link" href="#">Шафи купе/Гардеробні/Прихожі</a>
+							<a class="dropdown-link" href="#">Спальні</a>
+							<a class="dropdown-link" href="#">Дитячі</a>
+							<a class="dropdown-link" href="#">Меблі для ванної</a>
+							<a class="dropdown-link" href="#">Стінки під телевізор</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<a href="#about" onclick="menuHide()">Вироби з каменю</a>
+						<!-- <button class="dropbtn">ФАКТИ</button> -->
+						<div class="dropdown-content">
+							<a class="dropdown-link" href="#">Стільниці</a>
+							<a class="dropdown-link" href="#">Барні стійки</a>
+							<a class="dropdown-link" href="#">Мийки</a>
+                            <a class="dropdown-link" href="#">Підвіконня</a>
+                            <a class="dropdown-link" href="#">Сходи</a>
+						</div>
+					</div>
+                    
+                    <div class="dropdown">
+						<a href="#about" onclick="menuHide()">Каталог каменю</a>
+						<!-- <button class="dropbtn">ФАКТИ</button> -->
+						<div class="dropdown-content">
+							<a class="dropdown-link" href="#">Кварцовий камінь</a>
+							<a class="dropdown-link" href="#">Акриловий камінь</a>
+							<a class="dropdown-link" href="#">Керамограніт</a>
+						</div>
+					</div>
+
+                    <div class="link" onclick="menuHide()">
+						<a href="#contact">Контакти</a>
+					</div>
+                    
+            		<div class="link" onclick="menuHide()">
+						<a href="#about">Про нас</a>
+					</div>
+
+				</div>
+
+				<div class="social" id="social">
+					<a href="tel:+380977048475" class="social-link">
+						<svg class="social-img" width="30px" height="50px">
+							<use xlink:href="img/icons.svg#phone"></use>
+						</svg>
+					</a>
+
+					<a class="social-link" href="mailto:admin">
+						<svg class="social-img" width="70px" height="50px">
+							<use xlink:href="img/icons.svg#mail"></use>
+						</svg>
+					</a>
+
+					<a
+						href="https://www.facebook.com/mebli0977048475/?ref=page_internal"
+						class="social-link"
+						target="_blank"
+					>
+						<svg class="social-img" width="25px" height="50px">
+							<use xlink:href="img/icons.svg#facebook"></use>
+						</svg>
+					</a>
+
+					<!-- <a href="#" class="social-link">
+						<svg class="social-img" width="60px" height="50px">
+							<use xlink:href="img/icons.svg#twitter"></use>
+						</svg>
+					</a>
+
+					<a href="#" class="social-link">
+						<svg class="social-img" width="50px" height="50px">
+							<use xlink:href="img/icons.svg#instagram"></use>
+						</svg>
+					</a>
+
+					<a href="#" class="social-link">
+						<svg class="social-img" width="60px" height="50px">
+							<use xlink:href="img/icons.svg#telegram"></use>
+						</svg>
+					</a> -->
+				</div>
+			</div>
+
+			<div class="slider" id="main">
+				<div
+					class="fotorama"
+					data-width="100%"
+					data-nav="none"
+					data-arrows="true"
+					data-click="true"
+					data-swipe="true"
+					data-autoplay="2000"
+					data-fit="cover"
+				>
+					<div data-img="img/slides/slide01.jpg">
+						<p></p>
+					</div>
+					<div data-img="img/slides/slide02.jpg">
+						<p></p>
+					</div>
+					<div data-img="img/slides/slide03.jpg">
+						<p></p>
+					</div>
+					<div data-img="img/slides/slide04.jpg">
+						<p></p>
+					</div>
+                    <div data-img="img/slides/slide05.jpg">
+						<p></p>
+					</div>
+					<div data-img="img/slides/slide06.jpg">
+						<p></p>
+					</div>
+					<div data-img="img/slides/slide08.jpg">
+						<p></p>
+					</div>
+                    <div data-img="img/slides/slide09.jpg">
+						<p></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="about" id="about">
+				<div class="about-title">Про нас</div>
+				<div class="about-block">
+					<img
+						src="img/about/img1.jpg"
+						alt="TSR"
+						class="about-image"
+					/>
+					<div class="about-text">
+						<p>З кожним роком ми розвиваємося і вдосконалюємося. Ми ставимо грандіозні цілі щодо розширення мережі, поліпшення рівня обслуговування, різноманітність і поліпшення асортименту, і поступово ми ці плани втілюємо в життя, а на нові досягнення нас надихають наші клієнти, які часто стають нашими постійними покупцями і друзями.
+                        </p>
+                    
+					</div>
+				</div>
+
+				<div class="about-block about-block-reversed">
+					<div class="about-text">
+						<p>
+                    
+							На цьому торговельному майданчику ви знайдете:
+                        </p>
+                        <ul>
+                        <li>
+                            Меблі для кухні</li>
+                        <li>
+                            Спальні</li>
+                        <li>
+                            Вітальні</li>
+                        <li>
+                            Передпокої</li>
+                        <li>
+                            Шафи (в тому числі шафи-купе)</li>
+                        <li>
+                            Дитячі та дорослі ліжка</li>
+                        <li>
+                            Столи, тумби, комоди</li>
+                        <li>
+                            Меблі і аксесуари для ванної кімнати</li>
+                        <li>
+                            Cтоли кухонні </li></ul>
+                    </div>
+					<img
+						src="img/about/img2.png"
+						alt="TSR"
+						class="about-image"
+					/>
+				</div>
+
+				<div class="about-block">
+					<img
+						src="img/about/img3.jpg"
+						alt="TSR"
+						class="about-image"
+					/>
+					<div class="about-text">
+						<p>
+							Що Ви отримуєте, купуючи у нас?
+                        </p>
+                        <ul>
+                        <li>
+                            Комфорт і затишок в домі</li>
+                        <li>
+                            Досконалий і вишуканий інтер'єр</li>
+                        <li>
+                            Практичні, функціональні і надійні меблі, які задовольнять саме Ваш смак</li>
+                        <li>
+                            Здоровий і повноцінний відпочинок</li>
+                        <li>
+                            Величезний асортимент товару</li>
+                        <li>
+                            Постійно діючі акційні пропозиції</li>
+                        <li>
+                            Індивідуальний підхід до кожного клієнта</li>
+                        <li>
+                            Допомогу висококваліфікованих фахівців у виборі</li>
+                        <li>
+                            Послуги майстрів по відвантаженню і збирання меблів</li></ul>
+                    
+					</div>
+				</div>
+
+				<div class="about-block about-block-reversed">
+					<div class="about-text">
+						<p>
+                            SerVant
+						</p>
+                        <p>Ми працюємо для Вас</p>
+					</div>
+					<img
+						src="img/about/img4.png"
+						alt="TSR"
+						class="about-image"
+					/>
+				</div>
+			</div>
+			<div class="video">
+				<iframe
+					width="100%"
+					height="100%"
+					src="https://www.youtube.com/embed/2iNMD7nTMgU"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+			<div class="contact" id="contact">
+				<div class="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162039.45837860252!2d26.104084834166297!3d50.61101746496493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f6caa2d7c89d7%3A0x27481abdbc4e484!2z0KDRltCy0L3QtSwg0KDRltCy0L3QtdC90YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1suk!2sua!4v1604499605588!5m2!1suk!2sua"
+						width="100%"
+						height="100%"
+						frameborder="0"
+						style="border: 0"
+						allowfullscreen=""
+						aria-hidden="false"
+						tabindex="0"
+					></iframe>
+				</div>
+				<div class="or-line">
+					<div class="or-text">
+						<p>РОБОТИ</p>
+						<p>SerVant</p>
+					</div>
+				</div>
+				<div class="info">
+					<p>Графік</p>
+					<table class="info-table">
+						<tr>
+							<td>Понеділок</td>
+							<th>08:30 – 17:00</th>
+						</tr>
+						<tr>
+							<td>Вівторок</td>
+							<th>08:30 – 17:00</th>
+						</tr>
+						<tr>
+							<td>Середа</td>
+							<th>08:30 – 17:00</th>
+						</tr>
+						<tr>
+							<td>Четвер</td>
+							<th>08:30 – 17:00</th>
+						</tr>
+						<tr>
+							<td>П'ятниця</td>
+							<th>08:30 – 17:00</th>
+						</tr>
+						<tr>
+							<td>Субота</td>
+							<th>ЗАЧИНЕНО</th>
+						</tr>
+						<tr>
+							<td>Неділя</td>
+							<th>ЗАЧИНЕНО</th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="copyright">2020 © NatkaKo</div>
+				<div class="footer-social">
+					<a href="tel:123456789" class="social-link">
+						<svg class="social-img" width="30px" height="50px">
+							<use xlink:href="img/icons.svg#phone"></use>
+						</svg>
+					</a>
+
+					<a class="social-link" href="mailto:admin">
+						<svg class="social-img" width="70px" height="50px">
+							<use xlink:href="img/icons.svg#mail"></use>
+						</svg>
+					</a>
+
+					<a
+						href="https://www.facebook.com/"
+						class="social-link"
+						target="_blank"
+					>
+						<svg class="social-img" width="25px" height="50px">
+							<use xlink:href="img/icons.svg#facebook"></use>
+						</svg>
+					</a>
+
+					<!-- <a href="#" class="social-link">
+						<svg class="social-img" width="60px" height="50px">
+							<use xlink:href="img/icons.svg#twitter"></use>
+						</svg>
+					</a>
+
+					<a href="#" class="social-link">
+						<svg class="social-img" width="50px" height="50px">
+							<use xlink:href="img/icons.svg#instagram"></use>
+						</svg>
+					</a>
+
+					<a href="#" class="social-link">
+						<svg class="social-img" width="60px" height="50px">
+							<use xlink:href="img/icons.svg#telegram"></use>
+						</svg>
+					</a> -->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
