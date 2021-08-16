@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-test..css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="site">
+        <div class="hero">
+            <div class="hero__sections">
+                <section class="hero__section active">
+                    <div class="section__inner">
+                        Section 1
+                    </div>
+                </section>
+                <section class="hero__section">
+                    <div class="section__inner">
+                        Section 2
+                    </div>
+                </section>
+                <section class="hero__section">
+                    <div class="section__inner">
+                        Section 3
+                    </div>
+                </section>
+                <section class="hero__section">
+                    <div class="section__inner">
+                        Section 4
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra, quam ac cursus luctus, odio quam posuere leo, ut iaculis ex metus id risus. Phasellus aliquet magna a neque pellentesque commodo. Morbi massa diam, fringilla a libero vitae, bibendum malesuada neque. Mauris ut tincidunt dui. Praesent condimentum lacus at elit tempor, eget maximus tellus molestie. Aliquam lobortis dapibus purus, eget lobortis turpis. Integer dignissim purus eu mauris aliquam, ac pellentesque urna varius. Pellentesque imperdiet neque vel mi commodo facilisis. Curabitur ultrices leo dolor, vitae auctor lectus sollicitudin sed. Ut in odio metus. Donec vitae lacus eget magna sagittis efficitur eget nec dolor. Donec facilisis faucibus neque eu dignissim. Vestibulum efficitur orci gravida blandit venenatis. Nullam molestie ut ex ac feugiat. Pellentesque dapibus turpis in dolor vulputate vulputate. Nulla ultricies auctor dui, nec placerat mauris efficitur vitae.</p>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin at ipsum eget massa tincidunt laoreet. Nam facilisis posuere orci, id ultrices ligula imperdiet sed. Sed nec massa sit amet risus ullamcorper porta. Aliquam non ante nec tortor maximus mattis sit amet id metus. Donec eros sem, pharetra ac ultricies at, scelerisque a felis. Morbi a felis vel purus fermentum consequat. Aliquam placerat sed nibh sed sagittis. Cras tincidunt sapien bibendum, elementum quam sit amet, pretium nulla. Aenean ut dictum mauris, id molestie turpis. Aliquam enim ligula, porttitor in sodales vitae, mollis et elit. Integer varius mi massa, non sagittis metus laoreet id.
+            <p>Nulla vitae iaculis erat. Proin fringilla placerat dui, vitae maximus lectus sollicitudin a. Suspendisse aliquam malesuada dolor eu interdum. Mauris venenatis bibendum risus, in blandit velit condimentum non. Ut in nibh et mauris sodales laoreet ut sit amet erat. Vestibulum quis euismod risus. In elementum quam vitae ipsum imperdiet, non egestas metus fringilla. Fusce elementum, ipsum et ultricies tempor, enim purus luctus dui, ac maximus enim odio bibendum mi. Sed scelerisque nunc quis leo pretium, ac interdum metus porttitor. Donec magna sem, pellentesque eget fringilla et, hendrerit ac felis. Curabitur accumsan bibendum dui id posuere. Ut pharetra vel ipsum et volutpat. Aenean interdum eget nulla sit amet viverra. Sed bibendum semper hendrerit. Praesent luctus nibh vitae neque tempor, non lacinia dui ullamcorper.</p>
+            <p>Suspendisse vulputate varius sapien, faucibus bibendum magna. Ut consequat tortor quis metus dignissim maximus. Quisque et est consequat urna ultricies aliquam sed eget turpis. Pellentesque quis lacus hendrerit, vehicula dui at, vestibulum nisi. Cras dictum, risus sed pellentesque tempor, turpis lacus lacinia mi, et convallis ipsum libero sed quam. Pellentesque tempor felis vitae tortor placerat lobortis. Nunc commodo pretium sem sed convallis.</p>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis pharetra venenatis nisi, vitae tincidunt purus elementum ut. Mauris a quam vitae arcu pulvinar sollicitudin dictum id purus. Nullam a interdum lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras mattis ultricies scelerisque. Duis vel risus posuere, fringilla erat vitae, mollis ante. Aliquam ut augue in purus congue feugiat.</p>
+        </div>
+    </div>
+
+    <script>
+    $( window )..addEventListener('scroll', function() {
+        alert('TEST!');
+        var windowY = window.pageYOffset,
+                sections = $('.hero__section'),
+                lowest; 
+        for ( var i = 0; i < sections.length; i++ ) {
+            var current = sections.eq(i);
+            if ( windowY >= current.offset().top ) {
+                if ( !current.hasClass('active') ) {
+                    current.addClass('active');
+                }
+            } else {
+                current.removeClass('active');
+            }
+        }
+    });
+    </script>
+</body>
+</html>
